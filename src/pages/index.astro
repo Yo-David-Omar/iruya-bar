@@ -47,33 +47,487 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
-  <!-- MENÚ -->
+   <!-- MENÚ COMPLETO -->
   <section id="menu" class="py-5 bg-cream">
     <div class="container py-4">
-      <h2 class="font-heading text-center mb-5" style="color: var(--brown)">Nuestro Menú</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="text-center p-4" style="background: white; border-radius: 0.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08)">
-            <i class="bi bi-cup-hot fs-1" style="color: var(--terracotta)"></i>
-            <h4 class="font-heading mt-3 mb-2">Cafés Especiales</h4>
-            <p class="text-earth mb-0">Espresso, Cappuccino, Latte, Cold Brew</p>
+      <h2 class="font-heading text-center mb-2" style="color: var(--brown); font-size: 3rem">Nuestro Menú</h2>
+      <p class="text-center text-earth mb-5">Café de especialidad y opciones para todos los gustos</p>
+
+      <!-- CAFÉS -->
+      <div class="mb-5">
+        <h3 class="font-heading mb-4 text-center" style="color: var(--brown); font-size: 2rem">
+          <i class="bi bi-cup-hot me-2"></i>Cafés
+        </h3>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem">Espresso</h5>
+                  <p class="text-earth small mb-0">Café puro, intenso y aromático</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.200</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center p-4" style="background: white; border-radius: 0.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08)">
-            <i class="bi bi-cake2 fs-1" style="color: var(--terracotta)"></i>
-            <h4 class="font-heading mt-3 mb-2">Desayunos</h4>
-            <p class="text-earth mb-0">Medialunas, Tostadas, Bowl de Frutas</p>
+          <div class="col-md-6">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem">Espresso Doble</h5>
+                  <p class="text-earth small mb-0">Doble dosis de energía</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.600</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center p-4" style="background: white; border-radius: 0.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08)">
-            <i class="bi bi-bag fs-1" style="color: var(--terracotta)"></i>
-            <h4 class="font-heading mt-3 mb-2">Artesanales</h4>
-            <p class="text-earth mb-0">Productos orgánicos y locales</p>
+          <div class="col-md-6">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem">Cappuccino</h5>
+                  <p class="text-earth small mb-0">Con leche espumada y cacao</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.800</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem">Latte</h5>
+                  <p class="text-earth small mb-0">Café con leche cremosa</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.900</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem">Latte Macchiato</h5>
+                  <p class="text-earth small mb-0">Leche manchada con café</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem">Cold Brew</h5>
+                  <p class="text-earth small mb-0">Café frío de extracción lenta (24hs)</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.200</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem">Iced Latte</h5>
+                  <p class="text-earth small mb-0">Café con leche fría y hielo</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.100</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem">Café con Leche</h5>
+                  <p class="text-earth small mb-0">Tradicional argentino</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.500</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- DESAYUNOS -->
+      <div class="mb-5">
+        <h3 class="font-heading mb-4 text-center" style="color: var(--brown); font-size: 2rem">
+          <i class="bi bi-sun me-2"></i>Desayunos
+        </h3>
+        
+        <!-- Clásicos -->
+        <h4 class="font-heading mb-3 mt-4" style="color: var(--earth); font-size: 1.5rem">Clásicos</h4>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Desayuno Clásico</h5>
+                  <p class="text-earth small mb-2">Medialunas (6 unidades), café con leche y jugo natural</p>
+                  <span class="badge bg-secondary">Incluye bebida</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$3.500</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Tostadas Completas</h5>
+                  <p class="text-earth small mb-2">Pan de campo, manteca, mermelada, dulce de leche, café</p>
+                  <span class="badge bg-secondary">Incluye bebida</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$3.200</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Tortilla de Rescoldo</h5>
+                  <p class="text-earth small mb-2">Con queso, dulce de leche y café</p>
+                  <span class="badge bg-secondary">Incluye bebida</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$2.800</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saludables -->
+        <h4 class="font-heading mb-3 mt-5" style="color: var(--earth); font-size: 1.5rem">Opciones Saludables</h4>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white; border-left: 4px solid var(--terracotta)">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Desayuno Light</h5>
+                  <p class="text-earth small mb-2">Yogur griego, granola casera, frutas frescas, té verde</p>
+                  <span class="badge" style="background: rgba(176,125,98,0.15); color: var(--terracotta)">Bajo en calorías</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$3.800</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white; border-left: 4px solid var(--terracotta)">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Bowl Vital</h5>
+                  <p class="text-earth small mb-2">Açaí, banana, granola, miel, semillas de chía</p>
+                  <span class="badge" style="background: rgba(176,125,98,0.15); color: var(--terracotta)">Energético</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$4.200</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white; border-left: 4px solid var(--terracotta)">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Opción Keto</h5>
+                  <p class="text-earth small mb-2">Huevos revueltos, palta, queso, café negro</p>
+                  <span class="badge" style="background: rgba(176,125,98,0.15); color: var(--terracotta)">Sin TACC</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$4.500</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white; border-left: 4px solid var(--terracotta)">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Pan Nube</h5>
+                  <p class="text-earth small mb-2">Pan de almendras, queso crema, mermelada sin azúcar, café</p>
+                  <span class="badge" style="background: rgba(176,125,98,0.15); color: var(--terracotta)">Sin gluten</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$3.900</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white; border-left: 4px solid var(--terracotta)">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Bowl de Frutas</h5>
+                  <p class="text-earth small mb-2">Frutas de estación, yogur natural, granola, miel</p>
+                  <span class="badge" style="background: rgba(176,125,98,0.15); color: var(--terracotta)">Natural</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$3.600</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white; border-left: 4px solid var(--terracotta)">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Desayuno de Campo</h5>
+                  <p class="text-earth small mb-2">Tortilla de rescoldo, queso de cabra, dulce de membrillo, café</p>
+                  <span class="badge" style="background: rgba(176,125,98,0.15); color: var(--terracotta)">Tradicional</span>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700; font-size: 1.1rem">$3.400</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JUGOS Y LICUADOS -->
+      <div class="mb-5">
+        <h3 class="font-heading mb-4 text-center" style="color: var(--brown); font-size: 2rem">
+          <i class="bi bi-cup-straw me-2"></i>Jugos y Licuados
+        </h3>
+        
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Jugo Natural</h5>
+              <p class="text-earth small mb-2">Naranja, pomelo o naranja-zanahoria</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.800</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Detox Verde</h5>
+              <p class="text-earth small mb-2">Espinaca, manzana, jengibre, limón</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.200</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Energizante</h5>
+              <p class="text-earth small mb-2">Remolacha, zanahoria, naranja, jengibre</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.300</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Licuado de Frutas</h5>
+              <p class="text-earth small mb-2">Frutas de estación con leche o agua</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.400</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Smoothie Bowl</h5>
+              <p class="text-earth small mb-2">Açaí, banana, toppings</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$3.200</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Limonada con Menta</h5>
+              <p class="text-earth small mb-2">Natural, con o sin gas</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.600</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Jugo de Pomelo</h5>
+              <p class="text-earth small mb-2">Natural exprimido</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.700</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.2rem">Agua Saborizada</h5>
+              <p class="text-earth small mb-2">Frutilla-menta o pepino-limón</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.200</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEBIDAS -->
+      <div class="mb-5">
+        <h3 class="font-heading mb-4 text-center" style="color: var(--brown); font-size: 2rem">
+          <i class="bi bi-droplet me-2"></i>Bebidas
+        </h3>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Agua Mineral</h5>
+              <p class="text-earth small mb-0">500ml - Con/sin gas</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$800</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Gaseosas</h5>
+              <p class="text-earth small mb-0">Coca, Sprite, Fanta - Lata</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$900</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Cerveza Artesanal</h5>
+              <p class="text-earth small mb-0">Rubia/Negra - 500ml</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.500</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Vino</h5>
+              <p class="text-earth small mb-0">Copa de Malbec/Torrontés</p>
+              <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.800</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DULCES -->
+      <div class="mb-5">
+        <h3 class="font-heading mb-4 text-center" style="color: var(--brown); font-size: 2rem">
+          <i class="bi bi-cookie me-2"></i>Dulces
+        </h3>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Medialunas</h5>
+                  <p class="text-earth small mb-0">6 unidades - Grasa o manteca</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.500</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Alfajores</h5>
+                  <p class="text-earth small mb-0">Dulce de leche/Membrillo</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$800</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Galletitas Caseras</h5>
+                  <p class="text-earth small mb-0">Avenas, coco, chocolate</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$600</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Tarta de Frutas</h5>
+                  <p class="text-earth small mb-0">Porción - Del día</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.200</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Churros</h5>
+                  <p class="text-earth small mb-0">6 unidades con chocolate</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.800</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Facturas Variadas</h5>
+                  <p class="text-earth small mb-0">Vigilantes, bolas de fraile</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$700 c/u</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENVASADOS -->
+      <div class="mb-5">
+        <h3 class="font-heading mb-4 text-center" style="color: var(--brown); font-size: 2rem">
+          <i class="bi bi-bag me-2"></i>Envasados
+        </h3>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Mermeladas</h5>
+                  <p class="text-earth small mb-0">Frutilla, durazno, higos - 250g</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.200</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Yogur Griego</h5>
+                  <p class="text-earth small mb-0">Natural - 500g</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.800</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Pan de Campo</h5>
+                  <p class="text-earth small mb-0">Masa madre - Unidad</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.500</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Granola</h5>
+                  <p class="text-earth small mb-0">Casera con frutos secos - 200g</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.800</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Mix de Frutos Secos</h5>
+                  <p class="text-earth small mb-0">Nueces, almendras, pasas - 100g</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$1.200</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-item p-3 rounded" style="background: white;">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1" style="color: var(--brown); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem">Dulce de Leche</h5>
+                  <p class="text-earth small mb-0">Artesanal - 400g</p>
+                </div>
+                <span class="menu-price" style="color: var(--terracotta); font-weight: 700">$2.500</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -82,7 +536,7 @@ import Footer from '../components/Footer.astro';
     <div class="container py-4">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-          <img src="/imagenes/espacio.jpg" alt="Espacio Iruya Bar" class="img-fluid rounded" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1)">
+          <img src="/imagenes/dosciclistascamino.jpg" alt="Espacio Iruya Bar" class="img-fluid rounded" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1)">
         </div>
         <div class="col-lg-6 order-lg-1">
           <h2 class="font-heading mb-4" style="color: var(--brown)">El Espacio</h2>
@@ -154,5 +608,33 @@ import Footer from '../components/Footer.astro';
   .btn-hero:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+    .menu-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(212,196,168,0.3);
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(92,74,58,0.15);
+  }
+  
+  .menu-price {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-price {
+      font-size: 1rem;
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+    
+    .d-flex.justify-content-between {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 </style>
