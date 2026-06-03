@@ -1,0 +1,64 @@
+---
+interface Props { currentPage: string; }
+const { currentPage } = Astro.props;
+---
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/imagenes/logoiruya.png" alt="Logo">
+      <div>
+        <h1 class="h4 mb-0 font-heading">IRUYA BAR</h1>
+        <p class="subtitle mb-0">Café Colombiano</p>
+      </div>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <i class="bi bi-list fs-4" style="color: var(--brown)"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/#historia" 
+             class:list={{ 'active': currentPage === 'historia' }}>
+            Historia
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#menu" 
+             class:list={{ 'active': currentPage === 'menu' }}>
+            Menú
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#espacio" 
+             class:list={{ 'active': currentPage === 'espacio' }}>
+            Espacio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#ubicacion" 
+             class:list={{ 'active': currentPage === 'ubicacion' }}>
+            Ubicación
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/artesanales" 
+             class:list={{ 'active': currentPage === 'artesanales' }}>
+            Artesanales
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/espacio-lectura" 
+             class:list={{ 'active': currentPage === 'lectura' }}>
+            Espacio Lectura
+          </a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <a href="/#ubicacion" class="btn btn-iruya">Visítanos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

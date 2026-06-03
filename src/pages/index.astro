@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Iruya Bar - Café Colombiano">
+  <Navbar currentPage="home" />
+  
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container text-center">
+      <p class="text-uppercase mb-4" style="letter-spacing: 0.5em; font-size: 0.8rem; color: var(--cream)">Yerba Buena • Tucumán</p>
+      <h2 class="hero-title mb-4" style="font-size: clamp(3rem, 8vw, 6rem); font-weight: 700; color: var(--cream)">
+        IRUYA <span style="color: var(--sand)">BAR</span>
+      </h2>
+      <p class="mb-5" style="font-size: 1.1rem; font-weight: 300; opacity: 0.9; color: var(--cream)">
+        Café de montaña con alma tántrica. Desayunos y meriendas gourmet<br>con la mejor vista del cerro.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="/#menu" class="btn btn-hero" style="padding: 0.75rem 2rem; background: var(--cream); color: var(--brown); border: 2px solid var(--cream); border-radius: 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em">Ver Menú</a>
+        <a href="/#ubicacion" class="btn btn-hero" style="padding: 0.75rem 2rem; background: transparent; color: var(--cream); border: 2px solid var(--cream); border-radius: 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em">Cómo Llegar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORIA -->
+  <section id="historia" class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="/imagenes/historia.jpg" alt="Historia Iruya Bar" class="img-fluid rounded" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1)">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="font-heading mb-4" style="color: var(--brown)">Nuestra Historia</h2>
+          <p class="text-earth">
+            En el corazón de Yerba Buena, Iruya Bar nace como un homenaje a los paisajes 
+            montañosos del norte argentino. Más que un café, somos un espacio donde 
+            confluyen el arte, la gastronomía y la contemplación.
+          </p>
+          <p class="text-earth">
+            Cada taza de café cuenta una historia de origen, cultivado en las mejores 
+            fincas colombianas y tostado artesanalmente para preservar sus notas únicas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section id="menu" class="py-5 bg-cream">
+    <div class="container py-4">
+      <h2 class="font-heading text-center mb-5" style="color: var(--brown)">Nuestro Menú</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="text-center p-4" style="background: white; border-radius: 0.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08)">
+            <i class="bi bi-cup-hot fs-1" style="color: var(--terracotta)"></i>
+            <h4 class="font-heading mt-3 mb-2">Cafés Especiales</h4>
+            <p class="text-earth mb-0">Espresso, Cappuccino, Latte, Cold Brew</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center p-4" style="background: white; border-radius: 0.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08)">
+            <i class="bi bi-cake2 fs-1" style="color: var(--terracotta)"></i>
+            <h4 class="font-heading mt-3 mb-2">Desayunos</h4>
+            <p class="text-earth mb-0">Medialunas, Tostadas, Bowl de Frutas</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center p-4" style="background: white; border-radius: 0.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08)">
+            <i class="bi bi-bag fs-1" style="color: var(--terracotta)"></i>
+            <h4 class="font-heading mt-3 mb-2">Artesanales</h4>
+            <p class="text-earth mb-0">Productos orgánicos y locales</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPACIO -->
+  <section id="espacio" class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <img src="/imagenes/espacio.jpg" alt="Espacio Iruya Bar" class="img-fluid rounded" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1)">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2 class="font-heading mb-4" style="color: var(--brown)">El Espacio</h2>
+          <p class="text-earth">
+            Un refugio diseñado para la pausa y el disfrute. Terraza con vista panorámica, 
+            interiores cálidos y un rincón especial dedicado a la lectura y la meditación.
+          </p>
+          <p class="text-earth">
+            Contamos también con un espacio de coworking para quienes buscan inspiración 
+            en un entorno diferente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="py-5 bg-cream">
+    <div class="container py-4 text-center">
+      <h2 class="font-heading mb-5" style="color: var(--brown)">Lo que dicen nuestros visitantes</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <blockquote class="blockquote">
+            <p class="mb-4" style="font-size: 1.2rem; font-style: italic; color: var(--earth)">
+              "El mejor café de Tucumán. Un lugar mágico con vistas increíbles y un ambiente 
+              único para desconectarse de la ciudad."
+            </p>
+            <footer class="blockquote-footer" style="color: var(--brown)">María G.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="py-5">
+    <div class="container py-4 text-center">
+      <h2 class="font-heading mb-4" style="color: var(--brown)">Visítanos</h2>
+      <p class="text-earth mb-4">
+        <i class="bi bi-geo-alt-fill me-2"></i>
+        Yerba Buena, Tucumán, Argentina
+      </p>
+      <p class="text-earth mb-4">
+        <i class="bi bi-clock-fill me-2"></i>
+        Lunes a Sábados: 8:00 - 20:00<br>
+        Domingos: 9:00 - 14:00
+      </p>
+      <div style="background: var(--sand); height: 300px; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: var(--brown)">
+        <p class="mb-0"><i class="bi bi-map me-2"></i>Mapa de Google Maps</p>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, var(--brown), var(--earth));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0;
+  }
+  .hero-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+</style>

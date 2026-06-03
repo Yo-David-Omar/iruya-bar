@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Productos Artesanales">
+  <Navbar currentPage="artesanales" />
+  
+  <header class="page-header">
+    <div class="container">
+      <h1 class="font-heading">Productos Artesanales</h1>
+      <p class="lead">Hecho en casa, con ingredientes naturales y mucho amor.</p>
+      <nav class="breadcrumb-custom d-flex justify-content-center">
+        <span><a href="/">Inicio</a> / <span class="active">Artesanales</span></span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-5 bg-cream">
+    <div class="container py-4">
+      <div class="row g-4">
+        <!-- Copiá aquí las 8 cards de artesanales que te pasé antes -->
+        <!-- Ejemplo rápido: -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card" style="background:white;border:none;border-radius:0.75rem;box-shadow:0 4px 15px rgba(92,74,58,0.1);height:100%">
+            <div class="card-img-top" style="height:180px;background:linear-gradient(135deg, var(--sand), var(--earth));display:flex;align-items:center;justify-content:center">
+              <i class="bi bi-cup fs-1" style="color:var(--cream)"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title font-heading">Yogurt Griego</h3>
+              <p class="card-text text-earth">Elaborado artesanalmente con leche fresca.</p>
+              <span class="badge" style="background:rgba(176,125,98,0.15);color:var(--terracotta)">100% Natural</span>
+            </div>
+          </div>
+        </div>
+        <!-- Repetí para los demás productos -->
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
