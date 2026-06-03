@@ -7,37 +7,284 @@ import Footer from '../components/Footer.astro';
 <BaseLayout title="Productos Artesanales">
   <Navbar currentPage="artesanales" />
   
+  <!-- HEADER DE PÁGINA -->
   <header class="page-header">
     <div class="container">
       <h1 class="font-heading">Productos Artesanales</h1>
-      <p class="lead">Hecho en casa, con ingredientes naturales y mucho amor.</p>
+      <p class="lead">
+        Hecho en casa, con ingredientes naturales y mucho amor. 
+        Cada bocado cuenta una historia.
+      </p>
       <nav class="breadcrumb-custom d-flex justify-content-center">
         <span><a href="/">Inicio</a> / <span class="active">Artesanales</span></span>
       </nav>
     </div>
   </header>
 
+  <!-- CARDS DE PRODUCTOS -->
   <section class="py-5 bg-cream">
     <div class="container py-4">
       <div class="row g-4">
-        <!-- Copiá aquí las 8 cards de artesanales que te pasé antes -->
-        <!-- Ejemplo rápido: -->
+        
+        <!-- Yogurt Griego -->
         <div class="col-md-6 col-lg-4">
-          <div class="card" style="background:white;border:none;border-radius:0.75rem;box-shadow:0 4px 15px rgba(92,74,58,0.1);height:100%">
-            <div class="card-img-top" style="height:180px;background:linear-gradient(135deg, var(--sand), var(--earth));display:flex;align-items:center;justify-content:center">
-              <i class="bi bi-cup fs-1" style="color:var(--cream)"></i>
+          <div class="card artisan-card">
+            <div class="card-img-wrapper">
+              <i class="bi bi-cup"></i>
             </div>
             <div class="card-body">
               <h3 class="card-title font-heading">Yogurt Griego</h3>
-              <p class="card-text text-earth">Elaborado artesanalmente con leche fresca.</p>
-              <span class="badge" style="background:rgba(176,125,98,0.15);color:var(--terracotta)">100% Natural</span>
+              <p class="card-text">
+                Elaborado artesanalmente con leche fresca de productores locales. 
+                Textura cremosa, sabor natural y sin aditivos.
+              </p>
+              <span class="artisan-badge">100% Natural</span>
             </div>
           </div>
         </div>
-        <!-- Repetí para los demás productos -->
+
+        <!-- Pan Nube -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card artisan-card">
+            <div class="card-img-wrapper">
+              <i class="bi bi-cloud"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title font-heading">Pan Nube</h3>
+              <p class="card-text">
+                Suave y esponjoso como una nube. Elaborado con harina de almendras, 
+                ideal para opciones sin gluten.
+              </p>
+              <span class="artisan-badge">Sin TACC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mermeladas -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card artisan-card">
+            <div class="card-img-wrapper">
+              <i class="bi bi-jar"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title font-heading">Mermeladas</h3>
+              <p class="card-text">
+                Frutas de estación cocidas lentamente con azúcar orgánica. 
+                Sabores: frutilla, durazno, higos y más.
+              </p>
+              <span class="artisan-badge">Frutas Locales</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pan de Campo -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card artisan-card">
+            <div class="card-img-wrapper">
+              <i class="bi bi-bread"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title font-heading">Pan de Campo</h3>
+              <p class="card-text">
+                Masa madre, fermentación lenta de 24hs. 
+                Corteza crocante y miga alveolada. Tradición pura.
+              </p>
+              <span class="artisan-badge">Masa Madre</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Churros -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card artisan-card">
+            <div class="card-img-wrapper">
+              <i class="bi bi-droplet"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title font-heading">Churros</h3>
+              <p class="card-text">
+                Receta tradicional argentina, fritos en el momento. 
+                Acompañados con chocolate caliente o dulce de leche casero.
+              </p>
+              <span class="artisan-badge">Frescos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tartas -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card artisan-card">
+            <div class="card-img-wrapper">
+              <i class="bi bi-flower1"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title font-heading">Tartas</h3>
+              <p class="card-text">
+                Dulces y saladas. Masa casera quebrada y rellenos con 
+                ingredientes frescos: acelga, jamón, frutas, etc.
+              </p>
+              <span class="artisan-badge">Del Día</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tortillas de Rescoldo -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card artisan-card">
+            <div class="card-img-wrapper">
+              <i class="bi bi-fire"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title font-heading">Tortillas de Rescoldo</h3>
+              <p class="card-text">
+                Tradición del norte argentino. Masa simple cocida sobre 
+                brasas de leña. Sabor auténtico e inigualable.
+              </p>
+              <span class="artisan-badge">Tradición</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pizzas -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card artisan-card">
+            <div class="card-img-wrapper">
+              <i class="bi bi-pizza"></i>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title font-heading">Pizzas</h3>
+              <p class="card-text">
+                Masa fermentada 48hs, salsa de tomate casera y quesos 
+                seleccionados. Cocidas en horno de barro a la vista.
+              </p>
+              <span class="artisan-badge">Horno de Barro</span>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN INFO -->
+  <section class="info-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h3 class="font-heading" style="color: var(--brown)">¿Por qué elegir nuestros artesanales?</h3>
+          <p class="mb-4 text-earth">
+            Cada producto es elaborado en pequeñas cantidades, 
+            asegurando frescura y calidad en cada preparación.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="info-item d-flex align-items-start mb-3">
+            <i class="bi bi-check-circle me-3" style="color: var(--terracotta); font-size: 1.5rem"></i>
+            <div>
+              <p class="fw-bold mb-1" style="color: var(--brown)">Ingredientes locales</p>
+              <p class="small mb-0 text-earth">Trabajamos con productores de la región</p>
+            </div>
+          </div>
+          <div class="info-item d-flex align-items-start mb-3">
+            <i class="bi bi-check-circle me-3" style="color: var(--terracotta); font-size: 1.5rem"></i>
+            <div>
+              <p class="fw-bold mb-1" style="color: var(--brown)">Sin conservantes</p>
+              <p class="small mb-0 text-earth">Todo natural, sin aditivos artificiales</p>
+            </div>
+          </div>
+          <div class="info-item d-flex align-items-start mb-3">
+            <i class="bi bi-check-circle me-3" style="color: var(--terracotta); font-size: 1.5rem"></i>
+            <div>
+              <p class="fw-bold mb-1" style="color: var(--brown)">Hecho a mano</p>
+              <p class="small mb-0 text-earth">Cada producto es elaborado con dedicación</p>
+            </div>
+          </div>
+          <div class="info-item d-flex align-items-start mb-3">
+            <i class="bi bi-check-circle me-3" style="color: var(--terracotta); font-size: 1.5rem"></i>
+            <div>
+              <p class="fw-bold mb-1" style="color: var(--brown)">Opciones para todos</p>
+              <p class="small mb-0 text-earth">Incluimos alternativas sin TACC y veganas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-5 bg-cream text-center">
+    <div class="container">
+      <h3 class="font-heading mb-3" style="color: var(--brown)">¿Querés probarlos?</h3>
+      <p class="text-earth mb-4">
+        Visitá nuestro café en Yerba Buena o consultá por pedidos especiales.
+      </p>
+      <a href="/#ubicacion" class="btn btn-iruya">Cómo Llegar</a>
     </div>
   </section>
 
   <Footer />
 </BaseLayout>
+
+<style>
+  .artisan-card {
+    background: white;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(92,74,58,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .artisan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(92,74,58,0.15);
+  }
+  
+  .card-img-wrapper {
+    background: linear-gradient(135deg, var(--sand), var(--earth));
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .card-img-wrapper i {
+    font-size: 4rem;
+    color: var(--cream);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    color: var(--brown);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-text {
+    color: var(--earth);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .artisan-badge {
+    display: inline-block;
+    background: rgba(176,125,98,0.15);
+    color: var(--terracotta);
+    padding: 0.35rem 0.85rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .info-section {
+    background: white;
+  }
+</style>
